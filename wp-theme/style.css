@@ -1,0 +1,17 @@
+/**
+ * Theme Name: Taleem360
+ * Theme URI: http://example.com/
+ * Author: Fazal Shahid Latif
+ * Author URI: http://example.com/
+ * Description: A custom WordPress theme for educational purposes.
+ * Version: 1.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: taleem360
+ * Color Palette: #ffffff, #000000, #ff0000, #00ff00, #0000ff
+ */
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
