@@ -1,59 +1,60 @@
-# Edu-SaaS Marketing Platform (Pakistan)
+# Taleem360
 
-## Vision
-To create a robust marketing platform tailored for educational institutions in Pakistan, enhancing their outreach and engagement through innovative SaaS solutions.
+## Installation Instructions for Localhost Setup
+To set up the Taleem360 project on your localhost, you can use either XAMPP or Local by Flywheel.
 
-## Project Blueprint
-The Edu-SaaS Marketing Platform aims to assist educational institutions in managing their marketing strategies effectively while providing a seamless experience for potential students and their families. The platform integrates various tools for analytics, content management, and customer relationships, tailored specifically for the educational sector.
+### Using XAMPP:
+1. Download and install XAMPP from [apachefriends.org](https://www.apachefriends.org/index.html).
+2. Place the project folder in the `htdocs` directory inside your XAMPP installation folder.
+3. Start Apache and MySQL from the XAMPP control panel.
+4. Open your browser and navigate to `http://localhost/[your_project_folder]`.
 
-## Project Structure
-```
-/project-root
-│
-├── /api                     # Backend API
-│   ├── /controllers         # Business logic controllers
-│   ├── /models              # Database models
-│   ├── /routes              # API routing
-│   └── /middlewares         # Middleware functions
-│
-├── /client                  # Frontend application
-│   ├── /components          # UI components
-│   ├── /pages               # Application pages
-│   ├── /hooks               # Custom React hooks
-│   └── /styles              # CSS styles
-│
-├── /tests                   # Test cases
-│   ├── /unit                # Unit tests
-│   ├── /integration         # Integration tests
-│   └── /e2e                # End-to-end tests
-│
-├── /docs                    # Documentation
-│   └── /guides              # User and developer guides
-│
-├── package.json             # Project metadata and dependencies
-└── README.md                # Project overview
-```
+### Using Local by Flywheel:
+1. Download and install Local by Flywheel from [localwp.com](https://localwp.com/).
+2. Create a new site and choose the option to import from existing files.
+3. Select the Taleem360 project folder and follow the prompts to complete the setup.
+4. Once the site is created, click on the site name in Local to open it in your browser.
 
-## Phases of the Project
-1. **Planning**
-   - Requirements gathering and identifying target users.
-2. **Development**
-   - Building the front-end and back-end components.
-3. **Testing**
-   - Conducting unit tests and integration tests to ensure quality.
-4. **Deployment**
-   - Launching the platform on cloud servers and ensuring scalability.
-5. **Maintenance**
-   - Ongoing support and updates to adapt to user feedback.
+## WordPress Installation Steps
+1. Go to `http://localhost/[your_project_folder]/wp-admin/install.php`.
+2. Follow the on-screen prompts to choose your language and set up your WordPress database.
+3. Fill in the site title, username, password, and email address to complete the installation.
 
-## Migration Logic
-To ensure smooth transitions between different versions of the platform, follow these steps:
-- **Backup datastores** before migrating.
-- Use migration scripts to update database schemas.
-- Regularly synchronize version control to reflect changes across instances.
+## Theme Activation
+1. Go to the WordPress admin dashboard.
+2. Navigate to Appearance > Themes.
+3. Find the Taleem360 theme and click the "Activate" button.
 
-## Implementation Prompts for Copilot
-- "Create a new API endpoint for user authentication."
-- "Implement a responsive layout for the homepage using CSS Grid."
-- "Set up a relational database model for student profiles."
-- "Write unit tests for the course management module.")
+## Features Overview
+- Responsive design
+- user-friendly navigation
+- Integration with services for resource management
+
+## Folder Structure
+- `/wp-content/themes/taleem360/`  - Theme files
+- `/wp-content/plugins/`  - Plugins for extended functionality
+- `/wp-content/uploads/`  - Media uploads
+
+## Supported Pages
+- Home
+- About
+- Services
+- Contact
+- Madrasa
+- Resources
+
+## Phase 3 Features Description
+In Phase 3 of the development, the following features will be included:
+- Enhanced user roles and permissions
+- Advanced resource management capabilities
+- Integration with third-party APIs for additional functionalities
+
+## Deployment Guide for Live Server
+1. Choose a hosting provider that supports WordPress.
+2. Set up a domain and configure DNS settings to point to your hosting server.
+3. Upload your project files via FTP to the server root directory.
+4. Import your local database to the live server using phpMyAdmin.
+5. Update the `wp-config.php` file with the live database credentials.
+6. Access your live site by navigating to your domain.
+
+If you encounter any issues during the setup, refer to the documentation or support channels for assistance.
